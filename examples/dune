@@ -1,0 +1,9 @@
+(executables
+ (names i3_msg)
+ (libraries i3ipc lwt)
+ (preprocess
+  (pps ppx_driver lwt_ppx)))
+
+(alias
+ (name DEFAULT)
+ (deps i3_msg.exe))
